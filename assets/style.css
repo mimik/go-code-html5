@@ -1,0 +1,104 @@
+/*
+Project:
+Url:
+Author: Kim Gunnarsson
+
+Bazinga!
+
+==structure==
+	reset
+	mixing
+	variables
+	font-face
+	general
+	project
+	ie
+	mobile
+	ipad
+	print
+============
+	
+*/
+/* reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+input, select {
+  vertical-align: middle; }
+
+select, input, textarea, button {
+  font: 99% sans-serif; }
+
+small {
+  font-size: 85%; }
+
+strong, th {
+  font-weight: bold; }
+
+.ie7 legend {
+  margin-left: -7px; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer; }
+
+button, input, select, textarea {
+  width: auto;
+  overflow: visible;
+  margin: 0; }
+
+textarea {
+  overflow: auto; }
+
+input::-moz-focus-inner, button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0 0 5px red;
+  -webkit-box-shadow: 0 0 5px red;
+  box-shadow: 0 0 5px red; }
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* mixing */
+/* font-face */
+/* variables */
+/* general */
+/* project */
+/* ie */
+/* mobile */
+/* ipad */
+/* print */
