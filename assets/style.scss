@@ -1,0 +1,109 @@
+/*
+Project:
+Url:
+Author: Kim Gunnarsson
+
+Bazinga!
+
+==structure==
+	reset
+	mixing
+	variables
+	font-face
+	general
+	project
+	ie
+	mobile
+	ipad
+	print
+============
+	
+*/
+
+/* reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}input,select{vertical-align:middle}select,input,textarea,button{font:99% sans-serif}small{font-size:85%}strong,th{font-weight:bold}.ie7 legend{margin-left:-7px}input[type="radio"]{vertical-align:text-bottom}input[type="checkbox"]{vertical-align:bottom}.ie7 input[type="checkbox"]{vertical-align:baseline}label,input[type="button"],input[type="submit"],input[type="image"],button{cursor:pointer}button,input,select,textarea{width:auto;overflow:visible;margin:0}textarea{overflow:auto}input::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0}input:invalid,textarea:invalid{border-radius:1px;-moz-box-shadow:0 0 5px red;-webkit-box-shadow:0 0 5px red;box-shadow:0 0 5px red}.no-boxshadow input:invalid,.no-boxshadow textarea:invalid{background-color:#f0dddd}.ie7 img{-ms-interpolation-mode:bicubic}.clearfix:before,.clearfix:after{content:"";display:block;overflow:hidden}.clearfix:after{clear:both}.clearfix{zoom:1}
+
+/* mixing */
+// Border-Radius
+@mixin round($radius: 10px) {  
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-o-border-radius:$radius;
+	behavior: url(assets/pie/PIE.htc);
+}
+ 
+// Linear Gradient 
+@mixin gradient( 
+	$begin: black, 
+	$end: white,
+	$switch : 100%
+) {
+	background: $begin;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from($begin), color-stop($switch, $end));
+	background: -moz-linear-gradient(top, $begin, $end $switch);
+	background: -o-linear-gradient(top, $begin, $end $switch);
+	background: linear-gradient(top, $begin, $end $switch);
+	-pie-background: linear-gradient($begin, $end);
+	behavior: url(assets/pie/PIE.htc);
+} 
+
+//Box Shadow 
+@mixin box-shadow( 
+	$x : 2px, 
+	$y : 2px, 
+	$blur : 5px, 
+	$spread : 0, 
+	$color : #ccc 
+) {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	-moz-box-shadow: $x $y $blur $spread $color;	
+	box-shadow: $x $y $blur $spread $color;	
+	-o-box-shadow:  $x $y $blur $spread $color;
+	behavior: url(assets/pie/PIE.htc);
+}
+
+//  
+@mixin transition($target: all,	$time: 600ms, $ease: default){
+	-webkit-transition:$target $time $ease;
+	-moz-transition:$target $time $ease; 
+	-o-transition:$target $time $ease;
+	transition:$target $time $ease;
+}
+
+
+// 
+@mixin scale(
+$size: 1.1
+){
+	-webkit-transform: scale($size);
+	-moz-transform: scale($size);
+	-o-transform: scale($size);
+	transform: scale($size);
+}
+
+//
+@mixin rotate($degrees: -30deg) {
+	-moz-transform: rotate($degrees);  
+	-o-transform: rotate($degrees);  
+	-webkit-transform: rotate($degrees);
+	filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+ zoom: 1;
+}
+
+/* font-face */
+
+/* variables */
+
+/* general */
+
+/* project */
+
+/* ie */
+ 
+/* mobile */
+
+/* ipad */
+
+/* print */
